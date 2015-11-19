@@ -3,7 +3,8 @@
  * Display Directory Tree
  *
  * Comments: Got help from websites to begin working on how to display the directories in the computer. Combined code from both websites.
- * editted it somewhat to try to display directories only, but not working...
+ * editted it somewhat to try to display directories only.
+ * trying to create a better looking tree using spaces and a counter.
  * http://www.java-examples.com/list-contents-directory
  * http://www.avajava.com/tutorials/lessons/how-do-i-recursively-display-all-files-and-directories-in-a-directory.html
  *
@@ -18,7 +19,7 @@ public class DirectoryDisplay
 	{							
 		int counter = 0;				//counter for putting spaces for ez reading directory in directory
 								//Testing using "../" for simplicity single directory.
-		File BeginFile = new File("../");		//goes thru previous directories, will try to make a recursive? check for parent directory, up to root?
+		File BeginFile = new File("../../");		//goes thru previous directories, will try to make a recursive? check for parent directory, up to root?
 		showDirectories(BeginFile, counter);			//but spamming ../../../ doesnt make an error of out of bounds, it ends up at BOOT *world languages* (Windows OS) 
 	}
 	public static void showDirectories(File secondFile, int counter) {
